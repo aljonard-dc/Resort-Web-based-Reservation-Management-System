@@ -1,0 +1,849 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+::-webkit-scrollbar {
+    width: 8px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  background: #A9A9A9; 
+  border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  }
+
+.gallery-sec{
+    padding-bottom: 2em;
+    width: 100%;
+    height: auto;
+}
+
+.refresh-category{
+    text-decoration: none;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    margin: 20px;
+}
+
+.refresh-category a{
+    padding:10px 3em;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #1fc724;
+    font-weight: bold;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.refresh-category a:hover{
+    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+}
+
+.gallery-sec .resort-details-container{
+    padding-top: 2em;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.category-container{
+    width: 30%;
+    height: auto;
+  
+}
+
+.title-description-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; 
+    align-items: center;
+   
+}
+
+.updateForm{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  
+}
+/* 
+.delete-button-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+.cat-title {
+    width: 100%;
+    height: 10vh;
+    color: #126234;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.title-input{
+    
+    text-transform: uppercase;
+    color: #126234;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 100%;
+    min-height: 20px; /* set a minimum height */
+    resize: none; /* disable manual resizing */
+    overflow-y: hidden; /* hide scroll bar */
+    text-align: center;
+}
+
+.hr-one {
+    margin: 5px auto;
+     width: 340px;
+     border: 0;
+     height: 2px;
+     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(121, 121, 121, 0.96), rgba(255, 255, 255, 0));
+ }
+ 
+ .h50 {
+     clear: both;
+     height: 30px;
+ }
+ 
+.cat-description {  
+    width: 100%;
+    height: auto;
+    color: #126234;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-bottom: 1em;
+   
+}
+
+.description-input{
+    color: #126234;
+    font-size: 1rem;
+    width: 100%;
+    min-height: 60px; /* set a minimum height */
+    resize: none; /* disable manual resizing */
+}
+
+.cat-description p {
+    width: 65%;
+    text-align: justify;
+}
+
+.deleteForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10em;
+}
+.deleteDetails{
+    
+    padding:10px 3em;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: red;
+    font-weight: bold;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deleteDetails:hover{
+    background: radial-gradient(circle at -1% 57.5%, rgb(255, 45, 45) 0%, rgb(145, 27, 11) 90%);
+}
+
+.updateDetails{
+    color: white;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #1fc724;
+    font-weight: bold;
+    padding: 14px 0;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+
+}
+
+.updateDetails:hover{
+    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+}
+
+.cards-images{
+    
+    width: 70%;
+    /* background: #2de279; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cat-images {
+    width: 23%;
+    height: 42vh;
+    background: grey;
+    object-fit: cover;
+    margin-bottom: 5em;
+}
+
+.cat-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.uploadForm{
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+   
+}
+
+.uploadForm .inputfile{
+    width: 90%;
+    font-size: 0.7rem;
+    
+}
+
+.uploadForm .inputfile::-webkit-file-upload-button {
+    background-color: #1fc724;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: .7rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    padding: 5px; 
+   
+}
+  
+.uploadForm .inputfile::-webkit-file-upload-button:hover {
+    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+}
+
+.uploadForm input[type="submit"] {  
+
+    margin-top: 10px;
+    padding: 10px 3em;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #1fc724;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;
+}
+.uploadForm input[type="submit"]:hover {
+    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+}
+
+  
+@media only screen and (max-width: 1200px) {
+    .resort-details-container{
+        padding-top: 0;
+        width: 100%;
+        height: auto;
+    }
+    .uploadForm{
+        position: relative;
+        height: 15vh;
+
+    }
+    .uploadForm input[type="submit"] {  
+        padding: 10px 1em;
+        margin-top: 15px;
+    }
+    .cat-description p {
+        width: 85%;
+       
+    }
+    
+}
+@media only screen and (max-width: 1000px) {
+    .resort-details-container{
+        padding-top: 0;
+        width: 100%;
+        height: auto;
+    }
+    .uploadForm{
+        position: relative;
+        height: 15vh;
+       
+    }
+    .uploadForm input[type="submit"] {  
+        padding: 10px 1em;
+        margin-top: 15px;
+    }
+    .cat-description p {
+        width: 85%;
+       
+    }
+    
+}
+@media only screen and (max-width: 900px) {
+    .resort-details-container{
+        padding-top: 0;
+        width: 100%;
+        height: auto;
+    }
+    .uploadForm{
+        position: relative;
+        height: 15vh;
+      
+    }
+    .uploadForm input[type="submit"] {  
+        padding: 10px 0.8em;
+        margin-top: 15px;
+        font-size: 0.7rem;
+    }
+    .cat-description p {
+        width: 90%;
+       
+    }
+    .hr-one {
+        margin: 5px auto;
+        width: 200px;
+       
+     }
+   
+
+}
+@media only screen and (max-width: 800px) {
+ 
+   .resort-details-container{
+        padding-top: 0em;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    
+    }
+    .cat-title {
+        width: 100%;
+        height: auto;
+      
+    }
+    .uploadForm{
+        position: relative;
+        height: 15vh;
+      
+    }
+    .updateDetails {
+        width: 40%;
+    }
+   
+    .uploadForm input[type="submit"] {  
+        padding: 10px 0.8em;
+        margin-top: 15px;
+        font-size: 0.7rem;
+    }
+    .cat-description p {
+        width: 70%;
+       
+    }
+    .hr-one {
+        margin: 5px auto;
+        width: 200px;
+       
+     }
+     .h50 {
+        clear: both;
+        height: 10px;
+    }
+    
+    .category-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .title-description-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap; 
+       
+    }
+    .cards-images{
+        width: 100%;
+        position: absolute;
+
+      
+    }
+    .updateForm{
+        width: 80%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    .deleteDetails {
+        margin-bottom: 22em;  
+        padding: 14px 20px;
+    
+    }
+    .cat-images {
+        margin-top: 18em;
+        object-fit: cover;
+        margin-bottom: 8em;
+    }
+    
+}
+@media only screen and (max-width: 550px) {
+ 
+.resort-details-container{
+padding-top: 0em;
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+
+}
+.cat-title {
+width: 100%;
+height: auto;
+
+}
+.uploadForm{
+position: relative;
+height: 15vh;
+
+}
+.updateDetails {
+width: 60%;
+}
+
+.uploadForm input[type="submit"] {  
+padding: 10px 0.8em;
+margin-top: 15px;
+font-size: 0.7rem;
+}
+.cat-description p {
+width: 80%;
+
+}
+.hr-one {
+margin: 5px auto;
+width: 200px;
+
+}
+.h50 {
+clear: both;
+height: 10px;
+}
+
+.category-container{
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.title-description-container {
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap; 
+
+}
+.cards-images{
+width: 100%;
+position: absolute;
+
+
+}
+
+.updateForm{
+width: 80%;
+height: auto;
+display: flex;
+align-items: center;
+flex-direction: column;
+
+}
+.deleteDetails {
+margin-bottom: 12em;  
+padding: 14px 20px;
+
+}
+.cat-images {
+margin-top: 17em;
+object-fit: cover;
+margin-bottom: 8em;
+width: 23%;
+height: 25vh;
+object-fit: cover;
+
+}
+.uploadForm .inputfile::-webkit-file-upload-button {
+
+font-size: 0.5rem;
+
+}
+
+}
+@media only screen and (max-width: 500px) {
+
+.resort-details-container{
+    padding-top: 0em;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+.cat-title {
+    width: 100%;
+    height: auto;
+
+}
+.uploadForm{
+    position: relative;
+    height: 15vh;
+
+}
+.updateDetails {
+    width: 70%;
+}
+
+.uploadForm input[type="submit"] {  
+    padding: 10px 0.8em;
+    margin-top: 15px;
+    font-size: 0.7rem;
+}
+.cat-description p {
+    width: 90%;
+}
+.hr-one {
+    margin: 5px auto;
+    width: 200px;
+
+}
+.h50 {
+    clear: both;
+    height: 10px;
+}
+
+.category-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.title-description-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; 
+
+}
+.cards-images{
+    width: 100%;
+    position: absolute;
+
+
+}
+
+.updateForm{
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.deleteDetails {
+    margin-bottom: 12em;  
+    padding: 14px 20px;
+
+}
+.cat-images {
+    margin-top: 18em;
+    object-fit: cover;
+    margin-bottom: 8em;
+    width: 23%;
+    height: 25vh;
+    object-fit: cover;
+        
+}
+.uploadForm .inputfile::-webkit-file-upload-button {
+
+    font-size: 0.5rem;
+
+}
+
+}
+@media only screen and (max-width: 500px) {
+
+    .resort-details-container{
+        padding-top: 0em;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    
+    }
+    .cat-title {
+        width: 100%;
+        height: auto;
+    
+    }
+    .uploadForm{
+        position: relative;
+        height: 15vh;
+    
+    }
+    .updateDetails {
+        width: 70%;
+    }
+    
+    .uploadForm input[type="submit"] {  
+        padding: 10px 0.8em;
+        margin-top: 15px;
+        font-size: 0.7rem;
+    }
+    .cat-description p {
+        width: 90%;
+    }
+    .hr-one {
+        margin: 5px auto;
+        width: 200px;
+    
+    }
+    .h50 {
+        clear: both;
+        height: 10px;
+    }
+    
+    .category-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .title-description-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap; 
+    
+    }
+    .cards-images{
+        width: 100%;
+        position: absolute;
+    
+    
+    }
+    
+    .updateForm{
+        width: 80%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    .deleteDetails {
+        margin-bottom: 12em;  
+        padding: 14px 20px;
+    
+    }
+    .cat-images {
+        margin-top: 18em;
+        object-fit: cover;
+        margin-bottom: 8em;
+        width: 23%;
+        height: 25vh;
+        object-fit: cover;
+            
+    }
+    .uploadForm .inputfile::-webkit-file-upload-button {
+    
+        font-size: 0.5rem;
+    
+    }
+    
+    .uploadForm .inputfile{
+        width: 100%;
+        font-size: 0.6rem;
+     
+    }
+    
+    .uploadForm input[type="submit"] {  
+        margin-top: 10px;
+        padding: 7px 0.4em;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 0.5rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+
+    .resort-details-container{
+        padding-top: 0em;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    
+    }
+    .cat-title {
+        width: 100%;
+        height: auto;
+    
+    }
+    .uploadForm{
+        position: relative;
+        height: 15vh;
+    
+    }
+    .updateDetails {
+        width: 95%;
+    }
+    
+    .uploadForm input[type="submit"] {  
+        padding: 10px 0.8em;
+        margin-top: 15px;
+        font-size: 0.7rem;
+    }
+    .cat-description p {
+        width: 95%;
+    }
+    .hr-one {
+        margin: 5px auto;
+        width: 200px;
+    
+    }
+    .h50 {
+        clear: both;
+        height: 10px;
+    }
+    
+    .category-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .title-description-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap; 
+    
+    }
+    .cards-images{
+        width: 100%;
+        position: absolute;
+    
+    
+    }
+    
+    .updateForm{
+        width: 90%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    .deleteDetails {
+        margin-bottom: 10em;  
+        padding: 14px 60px;
+        font-size: 1rem;
+    }
+    .cat-images {
+        margin-top: 18em;
+        object-fit: cover;
+        margin-bottom: 8em;
+        width: 23%;
+        height: 23vh;
+        object-fit: cover;
+            
+    }
+    .uploadForm .inputfile::-webkit-file-upload-button {
+    
+        font-size: 0.5rem;
+    
+    }
+    
+    .uploadForm .inputfile{
+        width: 100%;
+        font-size: 0.6rem;
+     
+    }
+    
+    .uploadForm input[type="submit"] {  
+        margin-top: 10px;
+        padding: 7px 0.4em;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 0.5rem;
+    }
+}
+    

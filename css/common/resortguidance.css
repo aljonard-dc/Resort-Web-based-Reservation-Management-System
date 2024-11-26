@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans:wght@300&family=Source+Code+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Source Code Pro', monospace; */
+    /* font-family: 'Comfortaa', cursive; */
+    /* font-family: 'Noto Sans', sans-serif; */
+}
+.resortguide-sec {
+    margin-top: 2rem;
+    width: 100%;
+    height: 400vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-container {
+  
+    object-fit: cover;
+    max-width: 65vw;
+    height: 120vh;
+ 
+}
+.img-container img{
+    max-width: 100%;
+    height: auto;
+   
+}
+@media (max-width: 768px) {
+    .resortguide-sec{
+        height: auto;
+    }
+    .img-container {
+      
+        max-width: 100%; /* Adjust to 100% for smaller screens */
+        height: auto; /* Allow the height to adjust proportionally */
+    }
+}
+
+

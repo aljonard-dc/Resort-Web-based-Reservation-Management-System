@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+      /* font-family:'Andika', sans-serif; */
+    /* font-family: 'Arvo', serif; */
+}
+.takeatour-sec{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0 5em 0;
+}
+.takeatour-container{
+    width: 80%;
+    height: 80vh;
+}.matterport-container{
+    width: 100%;
+    height: 100%;
+  
+  }
+.naturaverde-virtualtour{
+
+    width: 100%;
+    height: 100%;
+}

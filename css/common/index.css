@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #A9A9A9; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+header{
+    position: fixed;
+    z-index: 5;
+}
+
+.home-section{
+    background: #f1f1f1; ;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 8em;
+ 
+}
+.video-container{
+    height: 80vh;
+    width:65%;
+    position: relative;
+   
+}
+
+.video-container video{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.show-booknow{
+    width: 60%;
+    height: auto;
+    position: absolute;   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.description-container{
+
+    width: 100%;
+    height: auto;
+  
+}
+
+.description-container p {
+    padding: 1em;
+    font-size: 1.6rem;
+    color: #115000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0px 0px 5px white, 0px 0px 5px white;
+    }
+    to {
+        text-shadow: 0px 0px 20px white, 0px 0px 20px white;
+    }
+}
+.button-container{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5em 0;
+    /* animation-name:glow;
+
+    animation-direction:alternate; */
+}
+
+.button-container a{
+    background-color:#1fc724; 
+    color:white; 
+    border-radius:  15px;
+    text-decoration: none; 
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1.5em 4.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+  
+}
+.button-container a:hover{
+    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+}
+.fb-container{
+    width: 30%;
+    height: 80vh;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+@media only screen and (max-width:1200px){
+    .home-section{
+        height: auto;
+        width: 100%;
+    }
+    .video-container{
+        height: 80vh;
+        width:65%;
+        position: relative;
+       
+    }
+    .show-booknow{
+        width: 60%;
+        height: auto;
+    }
+    .description-container p {
+        padding: 1em;
+     
+        font-size: 1.3rem;
+        color: #115000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        animation: glow 3s infinite alternate;
+    }
+    .button-container a{
+        background-color:#1fc724; 
+        font-size: 1.1rem;
+        padding: 1.5em 4.5em;
+
+    }
+    .button-container a:hover{
+        background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+    }
+}
+@media only screen and (max-width:1000px){
+    .home-section{
+        height: auto;
+        width: 100%;
+    }
+    .video-container{
+        height: 80vh;
+        width:65%;
+        position: relative;
+      
+    }
+    .show-booknow{
+        width: 60%;
+        height: auto;
+    }
+    .description-container p {
+        padding: 1em;
+      
+        font-size: 1.3rem;
+        color: #115000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        animation: glow 3s infinite alternate;
+    }
+    .button-container a{
+        background-color:#1fc724; 
+        font-size: 1.1rem;
+        padding: 1.5em 4.5em;
+
+      
+    }
+    .button-container a:hover{
+        background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+    }
+    .fb-container{
+        width: 30%;
+        height: 80vh; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; 
+    }
+    
+}
+@media only screen and (max-width:900px){
+    .home-section{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .video-container{
+        height: 60vh;
+        width:90%;
+        position: relative;
+   
+       
+    }
+    .show-booknow{
+        width: 75%;
+        height: auto;
+    }
+    .description-container p {
+        padding: 1em;
+       
+        font-size: 1.3rem;
+        color: #115000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        animation: glow 3s infinite alternate;
+    }
+    .button-container a{
+        background-color:#1fc724; 
+        font-size: 1.1rem;
+        padding: 1.5em 4.5em;
+
+    }
+    .fb-container{
+        margin: 3em 0;
+        width: 100%;
+        height: 80vh; 
+        
+    }
+    
+}
+@media only screen and (max-width:800px){
+    .home-section{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .video-container{
+        height: 60vh;
+        width:90%;
+        position: relative;
+       
+    }
+    .show-booknow{
+        width: 75%;
+        height: auto;
+    }
+    .description-container p {
+        padding: 1em;
+       
+        font-size: 1.2rem;
+        color: #115000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        animation: glow 3s infinite alternate;
+    }
+    .button-container a{
+        background-color:#1fc724; 
+        font-size: 1rem;
+        padding: 1.3em 4.5em;
+
+    }
+    .fb-container{
+        margin: 3em 0;
+        width: 100%;
+        height: 80vh; 
+        
+    }
+    
+}
+
+@media only screen and (max-width:700px){
+    .home-section{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .video-container{
+        height: 60vh;
+        width:90%;
+        position: relative;
+       
+    }
+    .show-booknow{
+        width: 85%;
+        height: auto;
+    }
+    .description-container p {
+        padding: 1em;
+       
+        font-size: 1rem;
+        color: #115000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        animation: glow 3s infinite alternate;
+    }
+    .button-container a{
+        background-color:#1fc724; 
+        font-size: 1rem;
+        padding: 1.2em 4em;
+
+    }
+    .fb-container{
+        margin: 3em 0;
+        width: 100%;
+        height: 80vh; 
+        
+    }
+    
+}
+@media only screen and (max-width:500px){
+    .home-section{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .video-container{
+        height: 60vh;
+        width:90%;
+        position: relative;
+       
+    }
+    .show-booknow{
+        width: 85%;
+        height: auto;
+    }
+    .description-container p {
+        padding: 1em;
+       
+        font-size: 1rem;
+        color: #115000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        animation: glow 3s infinite alternate;
+    }
+    .button-container a{
+        background-color:#1fc724; 
+        font-size: 1rem;
+        padding: 1.2em 4em;
+
+    }
+    .fb-container{
+        margin: 3em 0;
+        width: 90%;
+        height: 70vh; 
+        
+    }
+    
+}
+@media only screen and (max-width:500px){
+    .home-section{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .video-container{
+        height: 60vh;
+        width:90%;
+        position: relative;
+       
+    }
+    .show-booknow{
+        width: 85%;
+        height: auto;
+    }
+    .description-container p {
+        padding: 1em;
+      
+        font-size: 0.8rem;
+        color: #115000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        animation: glow 3s infinite alternate;
+    }
+    .button-container a{
+        background-color:#1fc724; 
+        font-size: 0.8rem;
+        padding: 1.2em 3em;
+
+    }
+    .fb-container{
+        margin: 3em 0;
+        width: 90%;
+        height: 70vh; 
+        
+    }
+    
+}

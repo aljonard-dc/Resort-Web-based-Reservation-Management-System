@@ -1,0 +1,434 @@
+<?php
+
+              require_once 'db_connection.php';
+
+              $query = "SELECT * FROM package_prices WHERE price_id = 1";
+              $result = $conn->query($query);
+              $row = $result->fetch_assoc();
+              $dayTour = $row["package_price"];
+              $formattedDayTour = number_format($dayTour);
+
+              $query2 = "SELECT * FROM package_time WHERE id = 1";
+              $result2 = $conn->query($query2);
+              $row2 = $result2->fetch_assoc();
+              $dcheck_in = $row2["check_in_time"];
+              $checkInTime = date("h:i A", strtotime($dcheck_in));
+              $dcheck_out = $row2["check_out_time"];
+              $checkOutTime = date("h:i A", strtotime($dcheck_out));
+
+              $query3 = "SELECT * FROM package_prices WHERE price_id = 12";
+              $result3 = $conn->query($query3);
+              $row3 = $result3->fetch_assoc();
+              $dayMaxPax = $row3["package_price"];
+              $formattedDayMaxPax = number_format($dayMaxPax);
+
+              $query4 = "SELECT * FROM package_prices WHERE price_id = 2";
+              $result4 = $conn->query($query4);
+              $row4 = $result4->fetch_assoc();
+              $nightTour = $row4["package_price"];
+              $formattedNightTour = number_format($nightTour);
+
+              $query5 = "SELECT * FROM package_time WHERE id = 2";
+              $result5 = $conn->query($query5);
+              $row5 = $result5->fetch_assoc();
+              $ncheck_in = $row5["check_in_time"];
+              $ncheckInTime = date("h:i A", strtotime($ncheck_in));
+              $ncheck_out = $row5["check_out_time"];
+              $ncheckOutTime = date("h:i A", strtotime($ncheck_out));
+
+              $query6 = "SELECT * FROM package_prices WHERE price_id = 13";
+              $result6 = $conn->query($query6);
+              $row6 = $result6->fetch_assoc();
+              $nMaxPax = $row6["package_price"];
+              $formattedNMaxPax = number_format($nMaxPax);
+
+              $query7 = "SELECT * FROM package_time WHERE id = 3";
+              $result7 = $conn->query($query7);
+              $row7 = $result7->fetch_assoc();
+              $ocheck_in = $row7["check_in_time"];
+              $ocheckInTime = date("h:i A", strtotime($ocheck_in));
+              $ocheck_out = $row7["check_out_time"];
+              $ocheckOutTime = date("h:i A", strtotime($ocheck_out));
+
+
+
+              //bago kong lagay
+              $query8 = "SELECT * FROM package_prices WHERE price_id = 10";
+              $result8 = $conn->query($query8);
+              $row8 = $result8->fetch_assoc();
+              $dayExcess = $row8["package_price"];
+              $formattedDayExcess = number_format($dayExcess);
+
+              $query9 = "SELECT * FROM package_prices WHERE price_id = 14";
+              $result9 = $conn->query($query9);
+              $row9 = $result9->fetch_assoc();
+              $nightExcess = $row9["package_price"];
+              $formattedNightExcess = number_format($nightExcess);
+
+              $query10 = "SELECT * FROM package_prices WHERE price_id = 11";
+              $result10 = $conn->query($query10);
+              $row10 = $result10->fetch_assoc();
+              $overnightExcess = $row10["package_price"];
+              $formattedOvernightExcess = number_format($overnightExcess);
+
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel = "icon" href = "./assets/logo/NaturaVerdeLogo.png" type = "image/x-icon"><title>Natura Verde Farm and Private Resort</title>
+    <link rel="stylesheet" href="css/common/packages.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide@1.4.2/icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+<header>
+    <?php include('./header_unauthenticated.php') ?>  
+</header>
+
+<div class="package-sec">
+
+    <div class="packages-con">
+            
+            <div class="heading">
+                <h1 class="animate__animated animate__bounceInLeft">Feel free to pick the package that suits your preferences!</h1>
+                <h4 class="animate__animated animate__bounceInLeft"><i class="fa-solid fa-comment-dots"></i>&nbsp;Which one are you interested in selecting?</h4>
+            </div>
+            <div class="image-packages animate__animated animate__bounceInLeft">
+                <div class="daytour" data-popup="daytour"><img src="resources/Packages/daytour.jpg" alt="">DAY TOUR</div>
+                <div class="nighttour" data-popup="nightour"><img src="resources/Packages/nighttour.jpg" alt="">NIGHT TOUR</div>
+                <div class="overnight" data-popup="overnight"><img src="resources/Packages/overnight.jpg" alt="">OVERNIGHT PACKAGES</div> 
+            </div>
+            
+            <div class="overlay"></div>        
+                <div class="daytour-popup-container" id="daytour">
+                    
+                <a class="close-btn" id="closeDaytourBtn" data-popup="daytour">&times;</a><br>
+
+                    <div class="title-box">
+                            <!-- <i data-lucide-name="sun-moon"></i> -->
+                        <h2><i class="fa-solid fa-sun"></i>&nbsp;DAY TOUR&nbsp;|&nbsp; &nbsp; &nbsp; &nbsp; <?php echo "₱$formattedDayTour"; ?></php></h2>
+                    </div> <br><br>
+
+                    <div class="time-box">
+                        <h2> Check In <?php echo "$checkInTime"; ?> | Check Out <?php echo "$checkOutTime"; ?> <br>
+                        <?php echo "$formattedDayMaxPax"; ?> PERSONS AND BELOW
+                        </h2>
+                    </div>
+
+                    <div class="list-container">
+<div class="inclusions-list"> <pre>
+<p> Rate Inclusions:</p>
+      <!-- bago kong lagay -->
+<?php
+                     require_once './db_connection.php';
+
+                    try {
+                        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+                        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+                        // SQL query to retrieve room data
+                        $sql = "SELECT * FROM package_inclusions WHERE inclusion_for LIKE '%day%' ORDER BY inclusion_id";
+                        
+                        $stmt = $conn->prepare($sql);
+                        $stmt->execute();
+
+                        // Initialize a counter to ensure unique IDs
+                        $counter = 0;
+
+                        // Fetch and display the room options
+                        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                            
+                            $inclusionName = $row['inclusion_name'];
+                            $inclusionFor = $row['inclusion_for'];
+
+
+                            echo "✅ $inclusionName <br>";
+                            
+                            // Increment the counter to ensure unique IDs
+                            $counter++;
+                        }
+                    } catch (PDOException $e) {
+                        echo "Error: " . $e->getMessage();
+                    }
+
+                    $conn = null;
+                    ?>
+            
+Note:
+✨ Exceeding guests are allowed for P<?php echo "$formattedDayExcess"; ?>/head. 
+✨ No corkage for outside food/drinks. 
+✨ Rates are subject to change without prior notice </pre> 
+</div>
+
+
+
+                    </div>
+                    <a href="user-login.php" class="booknow">Book Now</a>
+                </div> 
+    
+            <div class="overlay"></div>        
+                <div class="nighttour-popup-container" id="nighttour">
+                    
+                <a class="close-btn" id="closeNighttourBtn" data-popup="nighttour">&times;</a><br>
+
+                <div class="title-box">
+                            <!-- <i data-lucide-name="sun-moon"></i> -->
+                        <h2><i class="fa-solid fa-moon"></i>&nbsp;NIGHT TOUR&nbsp;| &nbsp; &nbsp; <?php echo "₱$formattedNightTour"; ?></h2>
+                        
+                    </div> <br><br>
+
+                    <div class="time-box">
+                        <h2> Check In <?php echo "$ncheckInTime"; ?> | Check Out <?php echo "$ncheckOutTime"; ?><br>
+                        <?php echo "$formattedNMaxPax"; ?> PERSONS AND BELOW
+                        </h2>
+                    </div>
+
+
+                    <div class="list-container">
+<div class="inclusions-list"> <pre>
+<p> Rate Inclusions:</p>
+    <!-- bago kong lagay -->
+<?php
+                     require_once './db_connection.php';
+
+                    try {
+                        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+                        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+                        // SQL query to retrieve room data
+                        $sql = "SELECT * FROM package_inclusions WHERE inclusion_for LIKE '%night%' ORDER BY inclusion_id";
+                        
+                        $stmt = $conn->prepare($sql);
+                        $stmt->execute();
+
+                        // Initialize a counter to ensure unique IDs
+                        $counter = 0;
+
+                        // Fetch and display the room options
+                        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                            
+                            $inclusionName = $row['inclusion_name'];
+                            $inclusionFor = $row['inclusion_for'];
+
+
+                            echo "✅ $inclusionName <br>";
+                            
+                            // Increment the counter to ensure unique IDs
+                            $counter++;
+                        }
+                    } catch (PDOException $e) {
+                        echo "Error: " . $e->getMessage();
+                    }
+
+                    $conn = null;
+                    ?>
+            
+Note:
+✨ Exceeding guests are allowed for P<?php echo "$formattedNightExcess"; ?>/head. 
+✨ No corkage for outside food/drinks. 
+✨ Rates are subject to change without prior notice </pre> 
+</div>
+
+
+
+                    </div>
+                    <a href="user-login.php" class="booknow">Book Now</a>
+                </div>
+
+                <div class="overlay"></div>        
+                    <div class="overnightinclusions-container" id="overnight">
+                        
+                        <a class="close-btn" id="closeOvernightBtn" data-popup="overnight">&times;</a><br>
+
+                        <div class="title">
+                            <p><i class="fa-solid fa-star-and-crescent"></i>&nbsp;OVERNIGHT PACKAGES</p>
+                        </div> 
+    
+                        <div class="time">
+                            <p> Check In <?php echo "$ocheckInTime"; ?> | Check Out <?php echo "$ocheckOutTime"; ?> <br> 25 PERSONS AND BELOW</p>
+                        </div>
+
+                        <div class="rooms">
+                        <?php
+                     require_once './db_connection.php';
+
+                    try {
+                        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+                        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+                        // SQL query to retrieve room data
+                        $sql = "SELECT * FROM package_prices WHERE package_type = 'overnight' AND attribute = 'main room' ORDER BY package_price";
+                        
+                        $stmt = $conn->prepare($sql);
+                        $stmt->execute();
+
+                        // Initialize a counter to ensure unique IDs
+                        $counter = 0;
+
+                        // Fetch and display the room options
+                        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                            $roomID = $row['price_id'];
+                            $roomName = $row['package_name'];
+                            $roomPrice = $row['package_price'];
+                            $maxCapacity = $row['max_pax'];
+                            $formattedRoomPrice = number_format($roomPrice);
+
+
+                            echo '<p><label for="room-' . $roomID . '-' . $counter . '">' . $roomName . ' (up to ' . $maxCapacity . ' pax) - ₱' . $formattedRoomPrice . '</label></p>';
+                            
+                            // Increment the counter to ensure unique IDs
+                            $counter++;
+                        }
+                    } catch (PDOException $e) {
+                        echo "Error: " . $e->getMessage();
+                    }
+
+                    $conn = null;
+                    ?>
+                        </div> 
+
+                        <div class="list-container">
+<div class="inclusions-list"> <pre>
+<p> Rate Inclusions:</p>
+                     <!-- bago kong lagay -->
+<?php
+                     require_once './db_connection.php';
+
+                    try {
+                        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+                        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+                        // SQL query to retrieve room data
+                        $sql = "SELECT * FROM package_inclusions WHERE inclusion_for LIKE '%overnight%' ORDER BY inclusion_id";
+                        
+                        $stmt = $conn->prepare($sql);
+                        $stmt->execute();
+
+                        // Initialize a counter to ensure unique IDs
+                        $counter = 0;
+
+                        // Fetch and display the room options
+                        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                            
+                            $inclusionName = $row['inclusion_name'];
+                            $inclusionFor = $row['inclusion_for'];
+
+
+                            echo "✅ $inclusionName <br>";
+                            
+                            // Increment the counter to ensure unique IDs
+                            $counter++;
+                        }
+                    } catch (PDOException $e) {
+                        echo "Error: " . $e->getMessage();
+                    }
+
+                    $conn = null;
+                    ?>
+                
+    Note:
+    ✨ Exceeding guests are allowed for P<?php echo "$formattedOvernightExcess"; ?>/head.
+    ✨ No corkage for outside food/drinks. 
+    ✨ Rates are subject to change without prior notice </pre> 
+</div>
+
+
+
+
+                        </div>
+                        <a href="user-login.php" class="booknow">Book Now</a>
+                    </div> 
+                
+    </div>
+
+
+
+
+
+</div>
+
+
+
+<footer>
+<?php include './footer.php'; ?>  
+</footer>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var items = document.querySelectorAll('.overnight');
+  var overlay = document.querySelector(".overlay");
+  var overnight = document.getElementById("overnight");
+  var closeOvernightBtn = document.getElementById("closeOvernightBtn");
+
+  items.forEach(function(item) {
+    item.addEventListener("click", function() {
+      // Display the "OVERNIGHT PACKAGES" popup when an item is clicked
+      overnight.style.display = "block";
+      overlay.style.display = "block";
+    });
+  });
+
+  closeOvernightBtn.addEventListener("click", function() {
+    overnight.style.display = "none";
+    overlay.style.display = "none";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var items = document.querySelectorAll('.daytour');
+  var overlay = document.querySelector(".overlay");
+  var daytour = document.getElementById("daytour");
+  var closeDaytourBtn = document.getElementById("closeDaytourBtn");
+
+  items.forEach(function(item) {
+    item.addEventListener("click", function() {
+      // Display the "OVERNIGHT PACKAGES" popup when an item is clicked
+      daytour.style.display = "block";
+      overlay.style.display = "block";
+    });
+  });
+
+  closeDaytourBtn.addEventListener("click", function() {
+    daytour.style.display = "none";
+    overlay.style.display = "none";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var items = document.querySelectorAll('.nighttour');
+  var overlay = document.querySelector(".overlay");
+  var nighttour = document.getElementById("nighttour");
+  var closeNighttourBtn = document.getElementById("closeNighttourBtn");
+
+  items.forEach(function(item) {
+    item.addEventListener("click", function() {
+      // Display the "OVERNIGHT PACKAGES" popup when an item is clicked
+      nighttour.style.display = "block";
+      overlay.style.display = "block";
+    });
+  });
+
+  closeNighttourBtn.addEventListener("click", function() {
+    nighttour.style.display = "none";
+    overlay.style.display = "none";
+  });
+});
+
+
+
+
+
+    </script>
+</body>
+
+</html>

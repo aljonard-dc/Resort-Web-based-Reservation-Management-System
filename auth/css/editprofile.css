@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.editprofile-sec{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0;
+}
+
+.profile-container{
+    border-radius: 10px;    
+    border: solid #36f90f ; 
+    width: 30%;
+    height: auto;
+    padding: 2em 3em;
+  
+}
+
+.title-container{
+    width: 100%;
+    padding: 0.8em 0;
+}
+
+.title-container h2{
+    text-align: center;
+}
+
+form input:focus{
+    outline:none; 
+    border-bottom-color:#006600;
+}
+
+form input{
+    font-size: 1rem;
+    width: 100%;
+    padding: 12px 20px;
+    border-color:  rgba(153, 153, 153, 0.223); 
+    border-radius: 10px; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0  20px;
+}
+
+#firstname, #middlename, #lastname{
+    text-transform: capitalize;
+    
+}
+
+#password{
+    margin-bottom: 10px;
+}
+
+.password-pos{
+    position: relative;
+}
+.pass-icon{
+    position: absolute;
+    top:43px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.btn-pos{
+    width: 100%;
+   display: flex;
+   justify-content: center;
+    place-items: center;
+}
+
+.save-btn{
+    width: 100%;
+    background-color:#1fc724; 
+    color:white; 
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px; 
+    border:none;  
+    cursor:pointer; 
+    border-radius: 10px; 
+}
+
+.save-btn:hover{
+    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+}
+
+.back-button{
+    background: none;
+      color: black;
+      border: none;
+      margin-right: 90%;
+      padding: 10px;
+      cursor: pointer;
+  }
+
+  .back-button i {
+    margin-right: 5px;
+  }
+@media only screen and (max-width:1200px){
+    .editprofile-sec{
+        height: auto;
+        width: 100%;
+        padding: 4em 0;
+    }
+
+    .profile-container{
+        width: 30%;
+        height: auto;
+        padding: 2em 3em;
+        
+    }
+
+    .title-container{
+        width: 100%;
+        padding: 0.8em 0;
+    }
+
+}
+@media only screen and (max-width:1100px){
+    .editprofile-sec{
+        height: auto;
+        width: 100%;
+        padding: 4em 0;
+    }
+
+    .profile-container{
+        width: 40%;
+        height: auto;
+        padding: 2em 3em;
+        
+    }
+
+    .title-container{
+        width: 100%;
+        padding: 0.8em 0;
+    }
+
+}
+@media only screen and (max-width:1000px){
+    .editprofile-sec{
+        height: auto;
+        width: 100%;
+        padding: 4em 0;
+    }
+
+    .profile-container{
+        width: 40%;
+        height: auto;
+        padding: 2em 3em;
+        
+    }
+
+    .title-container{
+        width: 100%;
+        padding: 0.8em 0;
+    }
+
+}
+@media only screen and (max-width:900px){
+    .editprofile-sec{
+        height: auto;
+        width: 100%;
+        padding: 4em 0;
+    }
+
+    .profile-container{
+        width: 50%;
+        height: auto;
+        padding: 2em 3em;
+        
+    }
+
+    .title-container{
+        width: 100%;
+        padding: 0.8em 0;
+    }
+
+}
+@media only screen and (max-width:800px){
+    .editprofile-sec{
+        height: auto;
+        width: 100%;
+        padding: 4em 0;
+    }
+
+    .profile-container{
+        width: 50%;
+        height: auto;
+        padding: 2em 3em;
+        
+    }
+
+    .title-container{
+        width: 100%;
+        padding: 0.8em 0;
+    }
+
+}
+@media only screen and (max-width:700px){
+    .editprofile-sec{
+        height: auto;
+        width: 100%;
+        padding: 4em 0;
+    }
+
+    .profile-container{
+        width: 60%;
+        height: auto;
+        padding: 2em 3em;
+        
+    }
+
+    .title-container{
+        width: 100%;
+        padding: 0.8em 0;
+    }
+
+}
+@media only screen and (max-width:600px){
+    .editprofile-sec{
+        height: auto;
+        width: 100%;
+        padding: 4em 0;
+    }
+
+    .profile-container{
+        width: 70%;
+        height: auto;
+        padding: 1em 3em;
+        
+    }
+
+    .title-container{
+        width: 100%;
+        padding: 0.8em 0;
+    }
+
+}
+  
+@media only screen and (max-width:500px){
+    .editprofile-sec{
+        height: auto;
+        width: 100%;
+        padding: 4em 0;
+    }
+
+    .profile-container{
+        width: 80%;
+        height: auto;
+        padding: 1em 2em;
+        
+    }
+
+    .title-container{
+        width: 100%;
+        padding: 0.6em 0;
+    }
+
+}
+@media only screen and (max-width:400px){
+    .editprofile-sec{
+        height: auto;
+        width: 100%;
+        padding: 4em 0;
+    }
+
+    .profile-container{
+        width: 90%;
+        height: auto;
+        padding: 1em 2em;
+        
+    }
+
+    .title-container{
+        width: 100%;
+        padding: 0.6em 0;
+    }
+    .save-btn{
+        width: 90%;
+        font-size: 1rem;
+    }
+    
+    .save-btn:hover{
+        background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+    }
+
+}
+  
+  
+  

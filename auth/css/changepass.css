@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.changepass-sec{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 4em 0;
+}
+
+.changepass-container{
+    border-radius: 10px;    
+    border: solid #36f90f ; 
+    width: 35%;
+    padding: 2em 3em;
+    height: auto;
+}
+
+.title-container{
+    width: 100%;
+    padding: 1em 0;
+}
+
+.title-container h2{
+    text-align: center;
+}
+
+form input:focus{
+    outline:none; 
+    border-bottom-color:#006600;
+}
+
+form input{
+    font-size: 1rem;
+    width: 100%;
+    padding: 12px 20px;
+    border-color:  rgba(153, 153, 153, 0.223); 
+    border-radius: 10px; 
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.password-pos{
+    position: relative;
+    padding: 0.8em 0;
+}
+
+.pass-icon{
+    position: absolute;
+    top:46px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.btn-pos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.update-btn{
+    width: 100%;
+    background-color:#1fc724; 
+    color:white; 
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px; 
+    border:none;  
+    cursor:pointer; 
+    border-radius: 10px; 
+}
+
+.update-btn:hover{
+    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+}
+
+.back-button{
+    background: none;
+    color: black;
+    border: none;
+    margin-right: 90%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.back-button i {
+    margin-right: 5px;
+}
+@media only screen and (max-width:1200px){
+    .changepass-sec{
+        height: auto;
+        width: 100%;
+        padding: 4em 0;
+    }
+    
+    .changepass-container{
+       
+        width: 35%;
+        padding: 2em 3em;
+        height: auto;
+    }
+    
+    .title-container{
+        width: 100%;
+        padding: 1em 0;
+    }
+}
+@media only screen and (max-width:1100px){
+    .changepass-sec{
+        height: auto;
+        width: 100%;
+        padding: 4em 0;
+    }
+    
+    .changepass-container{
+       
+        width: 40%;
+        padding: 2em 3em;
+        height: auto;
+    }
+    
+    .title-container{
+        width: 100%;
+        padding: 1em 0;
+    }
+}
+@media only screen and (max-width:1000px){
+    .changepass-sec{
+        height: auto;
+        width: 100%;
+        padding: 4em 0;
+    }
+    
+    .changepass-container{
+       
+        width: 45%;
+        padding: 2em 3em;
+        height: auto;
+    }
+    
+    .title-container{
+        width: 100%;
+        padding: 1em 0;
+    }
+}
+@media only screen and (max-width:800px){
+    .changepass-sec{
+        height: auto;
+        width: 100%;
+        padding: 4em 0;
+    }
+    
+    .changepass-container{
+       
+        width: 62%;
+        padding: 2em 3em;
+        height: auto;
+    }
+    
+    .title-container{
+        width: 100%;
+        padding: 1em 0;
+    }
+}
+@media only screen and (max-width:600px){
+    .changepass-sec{
+        height: auto;
+        width: 100%;
+        padding: 4em 0;
+    }
+    
+    .changepass-container{
+       
+        width: 72%;
+        padding: 2em 2em;
+        height: auto;
+    }
+    
+    .title-container{
+        width: 100%;
+        padding: 1em 0;
+    }
+}
+@media only screen and (max-width:500px){
+    .changepass-sec{
+        height: auto;
+        width: 100%;
+        padding: 4em 0;
+    }
+    
+    .changepass-container{
+       
+        width: 80%;
+        padding: 2em 2em;
+        height: auto;
+    }
+    
+    .title-container{
+        width: 100%;
+        padding: 1em 0;
+    }
+}
+@media only screen and (max-width:400px){
+    .changepass-sec{
+        height: auto;
+        width: 100%;
+        padding: 4em 0;
+    }
+    
+    .changepass-container{
+       
+        width: 90%;
+        padding: 1em 0.6em;
+        height: auto;
+    }
+    
+    .title-container{
+        width: 100%;
+        padding: 1em 0;
+    }
+}

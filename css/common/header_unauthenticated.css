@@ -1,0 +1,208 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A9A9A9; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+header{
+  width: 100%;
+  height: 12vh;
+ 
+}
+
+#navbar{
+  background: #FBF4E9;
+  padding: 5px 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 2;
+}
+
+#navbar:hover{
+  background: #FBF4E9;
+}
+#navbar ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #FBF4E9;
+  justify-content: center;
+}
+
+#navbar ul li{
+  text-transform: uppercase ;
+  padding: 15px 0;
+}
+
+#navbar ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+  user-select: none;
+}
+
+#navbar ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background:#36f900;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+#navbar ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+
+#navbar ul li.natura-title{
+  flex: 1;
+  color: #243b16;
+  font-size: 1.3em;
+  font-weight: 600;
+  user-select: none;
+}
+
+#navbar ul li a{
+  font-size: 18px;
+  font-style: bold;
+  text-decoration: none;
+  transition: .4s;
+  color: #243b16;
+}
+
+#navbar ul li:hover a{
+  color: #36f900;
+}
+
+#navbar ul li i{
+  font-size: 23px;
+}
+
+#navbar ul li.btn-menu{
+  display: none;
+}
+
+#navbar ul li.btn-menu.hide i:before{
+  
+  content: '\f00d';
+}
+
+.natura-logo{
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1300px){
+  #navbar{
+    padding: 5px 30px;
+  }
+  #navbar ul li.items{
+    width: 100%;
+    display: none;
+  }
+  #navbar ul li.items.show{
+    display: block;
+  }
+  #navbar ul li.btn-menu{
+    display: block;
+  }
+  #navbar ul li.items:hover{
+    
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px  #33ff69,
+                inset 0 0 10px #36f900;
+  }
+  #navbar ul li.items:hover:after{
+    
+    opacity: 0;
+  }
+}
+
+@media all and (max-width: 900px){
+  #navbar{
+    padding: 5px 30px;
+  }
+  #navbar ul li.items{
+    width: 100%;
+    display: none;
+  }
+  #navbar ul li.items.show{
+    display: block;
+  }
+  #navbar ul li.btn-menu{
+    display: block;
+  }
+  #navbar ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px  #33ff69,
+                inset 0 0 10px #36f900;
+  }
+  #navbar ul li.items:hover:after{
+    opacity: 0;
+  }
+}
+
+@media all and (max-width: 700px){
+  #navbar{
+    padding: 5px 30px;
+  }
+  #navbar ul li.items{
+    width: 100%;
+    display: none;
+  }
+  #navbar ul li.items.show{
+    display: block;
+  }
+  #navbar ul li.btn-menu{
+    display: block;
+  }
+  #navbar ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px  #33ff69,
+                inset 0 0 10px #36f900;
+  }
+  #navbar ul li.items:hover:after{
+    opacity: 0;
+  }
+  #navbar ul li.natura-title{
+    font-size: 18px;
+    align-self: center;
+  }
+}
+
+@media all and (max-width: 400px){
+  #navbar ul li.natura-title{
+    font-size: 15px;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .hero {
+  padding-top: 102px;
+}

@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #A9A9A9;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.tercon{
+    width: 100%;
+    height: auto;
+    border: 2px solid red;
+}
+.form-container{
+    width: 65%;
+    height: auto;
+    margin: auto;
+    padding: 4em 0;
+ 
+}
+.form-container form{
+    width: 100%;
+    height: auto;
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-container h1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+textarea {
+    font-size: 1.3rem;
+    width: 100%;
+    min-height: 650px; /* set a minimum height */
+    resize: none; /* disable manual resizing */
+    overflow-y: hidden; /* hide scroll bar */
+    margin-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 20px;
+    overflow-y: scroll;
+}
+/*  button  */
+.update-btn {
+    background-color: #1fc724;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 25%;
+    margin-left: 40px;
+  }
+  
+  .update-btn:hover {
+    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+  }
+  
+.update-message{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color:#0e4d0e;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    margin: 20px;
+}
+@media only screen and (max-width: 1200px) {
+    .form-container{
+        width: 75%;
+        padding: 2em 0;
+     
+    }
+    .update-btn {
+        font-size: 1rem;
+        cursor: pointer;
+        width: 25%;
+      
+      }
+
+}
+@media only screen and (max-width: 1000px) {
+    .form-container{
+        width: 75%;
+        padding: 2em 0;
+     
+    }
+    .update-btn {
+        font-size: 1rem;
+        cursor: pointer;
+        width: 30%;
+
+      }
+
+}
+@media only screen and (max-width: 800px) {
+    .form-container{
+        width: 80%;
+        padding: 2em 0;
+     
+    }
+    .update-btn {
+        font-size: 1rem;
+        cursor: pointer;
+        width: 30%;
+
+      }
+
+}
+@media only screen and (max-width: 600px) {
+    .form-container{
+        width: 80%;
+        padding: 2em 0;
+     
+    }
+    .update-btn {
+        font-size: 1rem;
+        cursor: pointer;
+        width: 40%;
+
+      }
+
+}
+@media only screen and (max-width: 500px) {
+    .form-container{
+        width: 85%;
+        padding: 2em 0;
+     
+    }
+    .update-btn {
+        font-size: 1rem;
+        cursor: pointer;
+        width: 50%;
+
+      }
+
+}
+@media only screen and (max-width: 400px) {
+    .form-container{
+        width: 90%;
+        padding: 2em 0;
+     
+    }
+    .update-btn {
+        font-size: 1rem;
+        cursor: pointer;
+        width: 60%;
+
+      }
+
+}

@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    z-index: 4;
+}
+.feedback-sec{
+    width: 100%;
+    background: white;
+    color:#226027;
+}
+
+.feedback-sec h2{
+    margin-top: 50px;
+    font-size: 2.3em;
+}
+
+.hr-one {
+    margin: 5px auto;
+     width: 340px;
+     border: 0;
+     height: 2px;
+     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(121, 121, 121, 0.96), rgba(255, 255, 255, 0));
+ }
+ 
+ .h50 {
+     clear: both;
+     height: 50px;
+ }
+
+.feedback-container{
+    margin-top: 30px;
+    width: 100%;
+
+    /* height: 180vh; */
+    /* border: 3px solid red; */
+}
+.footer{
+    position: relative;
+}

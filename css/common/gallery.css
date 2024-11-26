@@ -1,0 +1,1074 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+::-webkit-scrollbar {
+    width: 8px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  background: #A9A9A9; 
+  border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  }
+
+footer{
+    position: relative;
+}
+.gallery-sec{
+    padding: 2em 0;
+    width: 100%;
+    height: auto;
+
+}
+.gallery-sec .gallery-container{
+    width: 100%;
+    height: auto;
+
+  
+}
+
+.image-slider-pos{
+    width: 100%;
+    height: 50vh;
+    
+}
+.image-slider-pos .image-slider-container{
+    margin: 0 auto;
+}
+
+.slider-container{
+    width: 100%;
+    height: 50vh;
+}
+.img-box{
+    width: 100%;
+}
+.swiper-wrapper{
+    /* width: 100%; */
+    height: 40vh;
+    /* border: 3px solid purple; */
+}
+.img-box img{
+    /* max-height: 100%; */
+    padding: 5px;
+    height: 40vh;
+    border-radius: 10px;
+    /* border: 3px solid greenyellow; */
+}
+
+.card-slider{
+    width: 78%;
+    margin: auto;
+ 
+}
+.gallery-container .gallery-desc{
+    width: 100%;
+    height: auto;
+    padding: 2em 0 4em 0;
+}
+.gallery-desc h1{
+    text-align: center;
+    font-family:  Arial, sans-serif;
+    font-size: 1.7rem;
+}
+.gallery-sec .resort-details-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.category-container{
+    width: 30%;
+    height: auto;
+
+ 
+}
+.title-description-container {
+  
+    width: 100%;
+    height: 57vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; /* Adjusted from wrap to nowrap */
+    /* border: solid 2px lightskyblue; */
+}
+
+.cat-title {
+    /* border: 2px solid darkcyan; */
+    width: 100%;
+    height: 10vh;
+    color: #126234;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+
+}
+.hr-one {
+    margin: 5px auto;
+     width: 340px;
+     border: 0;
+     height: 2px;
+     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(121, 121, 121, 0.96), rgba(255, 255, 255, 0));
+ }
+ 
+ .h50 {
+     clear: both;
+     height: 50px;
+ }
+ 
+.cat-description {
+
+    width: 100%;
+    height: auto;
+    color: #126234;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+   
+   
+}
+
+.cat-description p {
+    width: 65%;
+    text-align: justify;
+ 
+}
+
+.cards-images{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+ 
+}
+.cat-images {
+    width: 23%;
+    height: 45vh;
+    background: #126234;
+    object-fit: cover;
+    margin-bottom: 5em;
+    transition: transform 0.8s ease;
+    overflow: hidden;
+	transition: transform 0.5s ease;
+   
+    &:hover {
+		transform: scale(1.2);
+	}
+
+	&--inverted:hover {
+		transform: scale(0.96);
+	}
+}
+
+.cat-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+@media only screen and (max-width: 1200px) {
+    .resort-details-container{
+        width: 100%;
+        height: auto;
+    
+    }
+    .category-container{
+        width: 30%;
+        height: auto;
+       
+     
+    }
+    .title-description-container {
+    
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap; /* Adjusted from wrap to nowrap */
+        /* border: solid 2px lightskyblue; */
+    }
+    
+    .cat-title {
+        /* border: 2px solid darkcyan; */
+        width: 100%;
+        height: 10vh;
+        color: #126234;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+  
+    
+    }
+    .hr-one {
+        margin: 5px auto;
+         width: 340px;
+         border: 0;
+         height: 2px;
+         background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(121, 121, 121, 0.96), rgba(255, 255, 255, 0));
+     }
+     
+     .h50 {
+         clear: both;
+         height: 50px;
+     }
+     
+    .cat-description {
+      
+        width: 100%;
+        height: auto;
+        color: #126234;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+       
+       
+    }
+    
+    .cat-description p {
+        width: 85%;
+        text-align: justify;
+     
+    }
+    
+    .cards-images{
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+       
+     
+    }
+    .cat-images {
+        width: 23%;
+        height: 40vh;
+        background: #126234;
+        object-fit: cover;
+        margin-bottom: 5em;
+        transition: transform 0.8s ease;
+        overflow: hidden;
+        transition: transform 0.5s ease;
+     
+        &:hover {
+            transform: scale(1.2);
+        }
+    
+        &--inverted:hover {
+            transform: scale(0.96);
+        }
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .resort-details-container{
+        width: 100%;
+        height: auto;
+    
+    }
+    .category-container{
+        width: 30%;
+        height: auto;
+       
+     
+    }
+    .card-slider{
+        width: 88%;
+        margin: auto;
+     
+    }
+    .gallery-container .gallery-desc{
+        width: 100%;
+        height: auto;
+        padding: 2em 0 4em 0;
+    }
+    .gallery-desc h1{
+        text-align: center;
+        font-family:  Arial, sans-serif;
+        font-size: 1.5rem;
+    }
+    .title-description-container {
+    
+        width: 100%;
+        height: 52vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap; /* Adjusted from wrap to nowrap */
+        /* border: solid 2px lightskyblue; */
+    }
+    
+    .cat-title {
+        /* border: 2px solid darkcyan; */
+        width: 100%;
+        height: 10vh;
+        color: #126234;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+  
+    
+    }
+    .cat-title h1{
+        font-size: 1.2rem;
+    
+    }
+    .hr-one {
+        margin: 5px auto;
+         width: 340px;
+         border: 0;
+         height: 2px;
+         background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(121, 121, 121, 0.96), rgba(255, 255, 255, 0));
+     }
+     
+     .h50 {
+         clear: both;
+         height: 50px;
+     }
+     
+    .cat-description {
+      
+        width: 100%;
+        height: auto;
+        color: #126234;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+       
+       
+    }
+    
+    .cat-description p {
+        width: 85%;
+        text-align: justify;
+        font-size: 0.8rem;
+     
+    }
+    
+    .cards-images{
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+       
+     
+    }
+    .cat-images {
+        width: 23%;
+        height: 40vh;
+        background: #126234;
+        object-fit: cover;
+        margin-bottom: 5em;
+        transition: transform 0.8s ease;
+        overflow: hidden;
+        transition: transform 0.5s ease;
+     
+        &:hover {
+            transform: scale(1.2);
+        }
+    
+        &--inverted:hover {
+            transform: scale(0.96);
+        }
+    }
+}
+@media only screen and (max-width: 900px) {
+    .resort-details-container{
+        width: 100%;
+        height: auto;
+    
+    }
+    .category-container{
+        width: 30%;
+        height: auto;
+       
+     
+    }
+    .card-slider{
+        width: 90%;
+        margin: auto;
+     
+    }
+    .gallery-container .gallery-desc{
+        width: 100%;
+        height: auto;
+        padding: 2em 0 4em 0;
+    }
+    .gallery-desc h1{
+        text-align: center;
+        font-family:  Arial, sans-serif;
+        font-size: 1.4rem;
+    }
+    .title-description-container {
+    
+        width: 100%;
+        height: 32vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap; /* Adjusted from wrap to nowrap */
+        /* border: solid 2px lightskyblue; */
+    }
+    
+    .cat-title {
+        /* border: 2px solid darkcyan; */
+        width: 100%;
+        height: 10vh;
+        color: #126234;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+  
+    
+    }
+    .cat-title h1{
+        font-size: 1.1rem;
+    
+    }
+    .hr-one {
+        margin: 5px auto;
+         width: 200px;
+         border: 0;
+         height: 2px;
+         background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(121, 121, 121, 0.96), rgba(255, 255, 255, 0));
+     }
+     
+     .h50 {
+         clear: both;
+         height: 20px;
+     }
+     
+    .cat-description {
+      
+        width: 100%;
+        height: auto;
+        color: #126234;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+       
+       
+    }
+    
+    .cat-description p {
+        width: 85%;
+        text-align: justify;
+        font-size: 0.6rem;
+     
+    }
+    
+    .cards-images{
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+       
+     
+    }
+    .cat-images {
+        width: 23%;
+        height: 26vh;
+        background: #126234;
+        object-fit: cover;
+        margin-bottom: 1em;
+        transition: transform 0.8s ease;
+        overflow: hidden;
+        transition: transform 0.5s ease;
+     
+        &:hover {
+            transform: scale(1.2);
+        }
+    
+        &--inverted:hover {
+            transform: scale(0.96);
+        }
+    }
+}
+@media only screen and (max-width: 800px) {
+    .resort-details-container{
+        width: 100%;
+        height: auto;
+    
+    }
+
+    
+    .card-slider{
+        width: 65%;
+        margin: auto;
+     
+    }
+    .gallery-container .gallery-desc{
+        width: 100%;
+        height: auto;
+        padding: 2em 0;
+    }
+    .gallery-desc h1{
+        text-align: center;
+        font-family:  Arial, sans-serif;
+        font-size: 1.2rem;
+    }
+    .category-container{
+        width: 30%;
+        height: auto;
+       
+     
+    }
+    .title-description-container {
+    
+        width: 100%;
+        height: 28vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap; /* Adjusted from wrap to nowrap */
+        /* border: solid 2px lightskyblue; */
+    }
+    
+    .cat-title {
+        /* border: 2px solid darkcyan; */
+        width: 100%;
+        height: 6vh;
+        color: #126234;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+  
+    
+    }
+    .cat-title h1{
+        font-size: 0.8rem;
+    
+    }
+    .hr-one {
+        margin: 5px auto;
+         width: 180px;
+         border: 0;
+         height: 2px;
+         background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(121, 121, 121, 0.96), rgba(255, 255, 255, 0));
+     }
+     
+     .h50 {
+         clear: both;
+         height: 10px;
+     }
+     
+    .cat-description {
+      
+        width: 100%;
+        height: auto;
+        color: #126234;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+       
+       
+    }
+    
+    .cat-description p {
+        width: 80%;
+        text-align: justify;
+        font-size: 0.6rem;
+     
+    }
+    
+    .cards-images{
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+       
+     
+    }
+    .cat-images {
+        width: 23%;
+        height: 24vh;
+        background: #126234;
+        object-fit: cover;
+        margin-bottom: 1em;
+        transition: transform 0.8s ease;
+        overflow: hidden;
+        transition: transform 0.5s ease;
+     
+        &:hover {
+            transform: scale(1.2);
+        }
+    
+        &--inverted:hover {
+            transform: scale(0.96);
+        }
+    }
+}
+@media only screen and (max-width: 700px) {
+    .resort-details-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .category-container{
+        width: 100%;
+        height: 100vh;
+       
+     
+    }
+    .card-slider{
+        width: 70%;
+        margin: auto;
+     
+    }
+    .gallery-container .gallery-desc{
+        width: 100%;
+        height: auto;
+        padding: 2em 0;
+    }
+    .gallery-desc h1{
+        font-size: 1.2rem;
+    }
+    .gallery-container .gallery-desc{
+        width: 100%;
+        height: auto;
+        padding: 1em 0;
+    }
+    .gallery-desc h1{
+        text-align: center;
+        font-family:  Arial, sans-serif;
+        font-size: 1rem;
+    }
+    .title-description-container {
+        position: relative;
+        width: 100%;
+        height: 34vh;
+        
+    }
+    
+    .cat-title {
+        /* border: 2px solid darkcyan; */
+        width: 100%;
+        height: auto;
+        color: #126234;
+       
+        display: flex;
+        justify-content: center;
+  
+    
+    }
+    .cat-title h1{
+        font-size: 0.6rem;
+        padding: 0.3em 0;
+    
+    }
+    .hr-one {
+         margin: 2px auto;
+         width: 260px;
+         border: 0;
+         height: 2px;
+         background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(121, 121, 121, 0.96), rgba(255, 255, 255, 0));
+     }
+     
+     .h50 {
+         clear: both;
+     
+     }
+     
+    .cat-description {
+      
+        width: 100%;
+        height: auto;
+        color: #126234;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        position: absolute;
+        top: 28px;
+       
+    }
+    
+    .cat-description p {
+        width: 90%;
+        text-align: justify;
+        font-size: 0.6rem;
+     
+    }
+    
+    .cards-images{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+     
+    }
+    .cat-images {
+    
+        width: 23%;
+        height: 20vh;
+        background: #126234;
+        object-fit: cover;
+
+        margin: 4em 0 1.9em 0;
+        transition: transform 0.8s ease;
+        overflow: hidden;
+        transition: transform 0.5s ease;
+     
+        &:hover {
+            transform: scale(1.2);
+        }
+    
+        &--inverted:hover {
+            transform: scale(0.96);
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .resort-details-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .category-container{
+        width: 100%;
+        height: 100vh;
+       
+     
+    }
+    .card-slider{
+        width: 80%;
+        margin: auto;
+     
+    }
+    .gallery-container .gallery-desc{
+        width: 100%;
+        height: auto;
+        padding: 1em 0;
+    }
+    .gallery-desc h1{
+        font-size: 0.8rem;
+    }
+    .title-description-container {
+        position: relative;
+        width: 100%;
+        height: 35vh;
+        
+    }
+    
+    .cat-title {
+        /* border: 2px solid darkcyan; */
+        width: 100%;
+        height: auto;
+        color: #126234;
+       
+        display: flex;
+        justify-content: center;
+  
+    
+    }
+    .cat-title h1{
+        font-size: 0.7rem;
+        padding: 0.3em 0;
+    
+    }
+    .hr-one {
+         margin: 2px auto;
+         width: 260px;
+         border: 0;
+         height: 2px;
+         background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(121, 121, 121, 0.96), rgba(255, 255, 255, 0));
+     }
+     
+     .h50 {
+         clear: both;
+     
+     }
+     
+    .cat-description {
+      
+        width: 100%;
+        height: auto;
+        color: #126234;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        position: absolute;
+        top: 30px;
+       
+    }
+    
+    .cat-description p {
+        width: 95%;
+        text-align: justify;
+        font-size: 0.6rem;
+     
+    }
+    
+    .cards-images{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+     
+    }
+    .cat-images {
+    
+        width: 23%;
+        height: 22vh;
+        background: #126234;
+        object-fit: cover;
+
+        margin: 3.8em 0 1.8em 0;
+        transition: transform 0.8s ease;
+        overflow: hidden;
+        transition: transform 0.5s ease;
+     
+        &:hover {
+            transform: scale(1.2);
+        }
+    
+        &--inverted:hover {
+            transform: scale(0.96);
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .resort-details-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .category-container{
+        width: 100%;
+        height: 100vh;
+       
+     
+    }
+    .card-slider{
+        width: 70%;
+        margin: auto;
+     
+    }
+    .gallery-container .gallery-desc{
+        width: 100%;
+        height: auto;
+        padding: 1em 0;
+    }
+    .gallery-desc h1{
+        font-size: 0.7rem;
+    }
+    .title-description-container {
+        position: relative;
+        width: 100%;
+        height: 34vh;
+        
+    }
+    
+    .cat-title {
+        /* border: 2px solid darkcyan; */
+        width: 100%;
+        height: auto;
+        color: #126234;
+       
+        display: flex;
+        justify-content: center;
+  
+    
+    }
+    .cat-title h1{
+        font-size: 0.6rem;
+        padding: 0.3em 0;
+    
+    }
+    .hr-one {
+         margin: 2px auto;
+         width: 260px;
+         border: 0;
+         height: 2px;
+         background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(121, 121, 121, 0.96), rgba(255, 255, 255, 0));
+     }
+     
+     .h50 {
+         clear: both;
+     
+     }
+     
+    .cat-description {
+      
+        width: 100%;
+        height: auto;
+        color: #126234;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        position: absolute;
+        top: 28px;
+       
+    }
+    
+    .cat-description p {
+        width: 90%;
+        text-align: justify;
+        font-size: 0.6rem;
+     
+    }
+    
+    .cards-images{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+     
+    }
+    .cat-images {
+    
+        width: 23%;
+        height: 20vh;
+        background: #126234;
+        object-fit: cover;
+
+        margin: 4em 0 2.1em 0;
+        transition: transform 0.8s ease;
+        overflow: hidden;
+        transition: transform 0.5s ease;
+     
+        &:hover {
+            transform: scale(1.2);
+        }
+    
+        &--inverted:hover {
+            transform: scale(0.96);
+        }
+    }
+}
+@media only screen and (max-width: 400px) {
+    .resort-details-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .category-container{
+        width: 100%;
+        height: 100vh;
+       
+     
+    }
+    .card-slider{
+        width: 45%;
+        margin: auto;
+     
+    }
+    .gallery-container .gallery-desc{
+        width: 100%;
+        height: auto;
+        padding: 0.7em 0;
+    }
+    .gallery-desc h1{
+        font-size: 0.6rem;
+    }
+    .title-description-container {
+        position: relative;
+        width: 100%;
+        height: 30vh;
+        
+    }
+    
+    .cat-title {
+        /* border: 2px solid darkcyan; */
+        width: 100%;
+        height: auto;
+        color: #126234;
+       
+        display: flex;
+        justify-content: center;
+  
+    
+    }
+    .cat-title h1{
+        font-size: 0.7rem;
+        padding: 0.3em 0;
+    
+    }
+    .hr-one {
+         margin: 2px auto;
+         width: 260px;
+         border: 0;
+         height: 2px;
+         background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(121, 121, 121, 0.96), rgba(255, 255, 255, 0));
+     }
+     
+     .h50 {
+         clear: both;
+     
+     }
+     
+    .cat-description {
+      
+        width: 100%;
+        height: auto;
+        color: #126234;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        position: absolute;
+        top: 30px;
+       
+    }
+    
+    .cat-description p {
+        width: 90%;
+        text-align: justify;
+        font-size: 0.4rem;
+     
+    }
+    
+    .cards-images{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+     
+    }
+    .cat-images {
+    
+        width: 23%;
+        height: 17vh;
+        background: #126234;
+        object-fit: cover;
+
+        margin: 3.8em 0 1.6em 0;
+        transition: transform 0.8s ease;
+        overflow: hidden;
+        transition: transform 0.5s ease;
+     
+        &:hover {
+            transform: scale(1.2);
+        }
+    
+        &--inverted:hover {
+            transform: scale(0.96);
+        }
+    }
+}

@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A9A9A9; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+header{
+  width: 100%;
+  height: 12vh;
+  background: transparent;
+  z-index: 5;
+}
+
+.user-info h3{
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+#navbar{
+  background: #FBF4E9;
+  padding: 5px 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 2;
+}
+
+
+#navbar:hover{
+  background: #FBF4E9;
+}
+#navbar ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #FBF4E9;
+  justify-content: center;
+  margin-right: 40px;
+}
+
+#navbar ul li{
+  text-transform: uppercase ;
+  padding: 15px 0;
+}
+
+#navbar ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+  user-select: none;
+}
+
+#navbar ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background:#36f900;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+#navbar ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+
+#navbar ul li.natura-title{
+  flex: 1;
+  color: #243b16;
+  font-size: 1.3em;
+  font-weight: 600;
+  user-select: none;
+  color:#226027;
+}
+
+#navbar ul li a{
+  font-size: 18px;
+  font-style: bold;
+  text-decoration: none;
+  transition: .4s;
+  color:#226027;
+}
+
+#navbar ul li:hover a{
+  color: #36f900;
+}
+
+#navbar ul li i{
+  font-size: 23px;
+}
+
+#navbar ul li.btn-menu{
+  display: none;
+}
+
+#navbar ul li.btn-menu.hide i:before{
+  
+  content: '\f00d';
+}
+.natura-logo{
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+.user-pic{
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+}
+/*   submenus  */
+
+
+.sub-menu-wrap{
+  position: absolute;
+  top: 100%;
+  right: 2%;
+  width: 320px;
+  /*  height and showhide    */
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+
+  
+}
+/* classname for js*/
+.sub-menu-wrap.open-menu{
+  max-height: 400px;
+}
+
+.sub-menu{
+  background: whitesmoke;
+  padding: 20px;
+  margin:10px;
+
+}
+.user-info{
+  display: flex;
+  align-items: center;
+}
+
+.user-info img{
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.sub-menu hr{
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  margin: 15px 0 10px;
+}
+.sub-menu-link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #525252;
+  margin: 12px 0;
+}
+.sub-menu-link p{
+  width: 100%;
+
+}
+.sub-menu-link img{
+  width: 40px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  margin-right: 15px;
+
+}
+
+.sub-menu-link span{
+  font-size: 1.5rem;
+  transition: transform 0.5s;
+}
+.sub-menu-link:hover span{
+  transform: translateX(5px);
+}
+.sub-menu-link:hover p{
+  font-weight: 600;
+}
+@media all and (max-width: 1300px){
+  #navbar{
+    padding: 5px 30px;
+  }
+  #navbar ul li.items{
+    width: 100%;
+    display: none;
+  }
+  #navbar ul li.items.show{
+    display: block;
+  }
+  #navbar ul li.btn-menu{
+    margin-right: 12px;
+    display: block;
+  }
+  #navbar ul li.items:hover{
+    
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px  #33ff69,
+                inset 0 0 10px #36f900;
+  }
+  #navbar ul li.items:hover:after{
+    
+    opacity: 0;
+  }
+}
+
+@media all and (max-width: 900px){
+  #navbar{
+    padding: 5px 30px;
+  }
+  #navbar ul li.items{
+    width: 100%;
+    display: none;
+  }
+  #navbar ul li.items.show{
+    display: block;
+  }
+  #navbar ul li.btn-menu{
+    margin-right: 14px;
+    display: block;
+  }
+  #navbar ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px  #33ff69,
+                inset 0 0 10px #36f900;
+  }
+  #navbar ul li.items:hover:after{
+    opacity: 0;
+  }
+}
+
+@media all and (max-width: 700px){
+  #navbar{
+    padding: 5px 30px;
+  }
+  #navbar ul li.items{
+    width: 100%;
+    display: none;
+  }
+  #navbar ul li.items.show{
+    display: block;
+  }
+  #navbar ul li.btn-menu{
+    margin-right: 14px;
+    display: block;
+  }
+  #navbar ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px  #33ff69,
+                inset 0 0 10px #36f900;
+  }
+  #navbar ul li.items:hover:after{
+    opacity: 0;
+  }
+  #navbar ul li.natura-title{
+    font-size: 12px;
+    align-self: center;
+  }
+  .user-pic{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+}
+
+@media all and (max-width: 400px){
+  #navbar ul li.natura-title{
+    font-size: 8px;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .hero {
+  padding-top: 102px;
+}

@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    position:relative;
+    z-index: 5;
+}
+body{  
+    width: 100%;
+    background-color: #ffffff00;
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+    
+    }
+
+::-webkit-scrollbar-thumb {
+background: #A9A9A9; 
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+.package-sec{
+    width: 100%;
+    height: 400%;      
+    margin: 25px 0 25px 0;
+}
+
+.heading h4{
+    font-family: Arial, sans-serif;
+    font-size: 1.4em;
+    font-weight: 2px;
+    text-align: center;
+    color: #0e4d0e;
+    justify-content: center;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+
+.category-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+ /* -----boxes ------- */
+.boxes{
+    width: 50%;
+    height: 50vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box .image-container{
+
+    border: lightgreen solid;
+    width: 80%;
+    height: 50%;
+    transition: transform 0.8s ease;
+       &:hover {
+		transform: scale(1.1);
+	}
+
+	&--inverted:hover {
+		transform: scale(0.8);
+	}
+}
+/* ------end boxes-------   */
+
+/* ----------------   */
+.image-container{
+    border: lightgreen solid;
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+    
+}
+.image-container img{
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+    transition: transform 0.8s ease;
+    &:hover {
+		transform: scale(1.1);
+	}
+
+	&--inverted:hover {
+		transform: scale(0.8);
+	}
+}
+/* ----------------   */
+    /* textcontainer */
+.text-container{
+ 
+    width: 90%;
+    height: 90%;
+    text-align: justify;
+    text-align: center;
+    padding: 1em;  
+}
+/* ----------------   */
+
+/* packages container */
+.heading{
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1{
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 2px;
+    text-align: center;
+    color: #0e4d0e;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+
+.image-packages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: auto;
+    font-weight: bold;
+}
+
+.image-packages img {
+    max-width: 80%;
+    height: 80%;
+    margin-bottom: 15px;
+    margin-top: 25px;
+     object-fit: cover;
+    transition: transform 0.8s ease;
+    &:hover {
+		transform: scale(1.1);
+	}
+
+	&--inverted:hover {
+		transform: scale(0.8);
+	}
+}
+
+/* ----------------   */
+
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);  
+}
+
+
+/* overnight close */
+#closeOvernightBtn{ 
+    position: absolute;
+    padding:0 0.3em 0 0.3em;
+    border-radius: 50% ;
+    right: 0.1rem;
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 600px;
+    cursor: pointer;
+    color: #70e000;
+}
+
+#closeOvernightBtn:hover{
+    color: black;
+}
+
+.inclusions-list{
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: whitesmoke;
+    border: 1px solid  #66FF00;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.daytour, .nighttour, .overnight{
+    padding: 10px;
+    border: 3px solid #004b23;
+    border-radius: 10px;
+    height: 400px;
+    width: 400px;
+    cursor: pointer;
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center text horizontally */
+}
+
+.daytour:hover, .nighttour:hover, .overnight:hover{
+    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+    color: white;
+    border: 4px solid #70e000;
+}
+
+#closeDaytourBtn, #closeNighttourBtn{ 
+    position: absolute;
+    padding:0 0.3em 0 0.3em;
+    border-radius: 50% ;
+    right: 0.1rem;
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 600px;
+    cursor: pointer;
+    color: #70e000;
+}
+
+#closeDaytourBtn:hover, #closeNighttourBtn:hover{
+    color: black;
+}
+
+.title p{
+    font-size: 1.7em;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+}
+
+.rooms{
+    margin-top: 10px;
+}
+
+.rooms p{
+    font-size: 1.1em;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.time p{
+    font-weight: bold;
+    font-size: 1.2em;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.daytour-popup-container,
+.nighttour-popup-container{
+    display: none; 
+    width: 50%;
+    height: 60vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 0px 40px 0px 40px;
+    border-radius: 1.5em;
+    border: 3px solid  #66FF00;
+    border-radius: 20px;
+    z-index: 4;
+    background: #FAF9F6;
+}
+
+.overnightinclusions-container{
+    display: none; 
+    width: 50%;
+    height: 70vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 0px 40px 0px 40px;
+    border-radius: 1.5em;
+    border: 3px solid  #66FF00;
+    border-radius: 20px;
+    z-index: 4;
+    background: #FAF9F6;
+}
+
+.inclusions-list p{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+}
+
+.title-box h2{
+    font-size: 1.9em;
+}
+
+.booknow{
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color:#1fc724; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    text-decoration: none;
+    justify-content: center;
+    margin-left: 43%;
+    margin-top: 15px;
+}
+
+.booknow:hover{
+    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+}
+
+/* 480px */
+@media only screen and (max-width: 480px) {
+    .daytour,
+    .nighttour,
+    .overnight {
+        width: 60%;
+        height: auto;
+    }
+
+    .daytour-popup-container,
+    .nighttour-popup-container,
+    .overnightinclusions-container {
+        width: 80%; /* Adjust the width as needed */
+        height: auto;
+        padding: 10px;
+    }
+
+    .heading h1 {
+        font-size: 1em;
+    }
+
+    .heading h4 {
+        font-size: 1em;
+    }
+
+    .daytour-popup-container h2,
+    .nighttour-popup-container h2 {
+        font-size: 1em; /* Adjust the font size as needed */
+    }
+
+    .overnightinclusions-container p {
+        font-size: .7em; /* Adjust the font size as needed */
+    }
+
+    .booknow {
+        margin: 15px auto 10px; /* Center horizontally, add margin-top and margin-bottom */
+        display: block;
+        padding: 10px;
+        text-align: center; /* Align the text in the center */
+    }
+
+    .inclusions-list {
+        font-size: .7em; /* Adjust font size */
+    }
+}
+
+/* 767px */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .daytour,
+    .nighttour,
+    .overnight {
+        width: 60%;
+        height: auto;
+    }
+
+    .daytour-popup-container,
+    .nighttour-popup-container,
+    .overnightinclusions-container {
+        width: 80%; /* Adjust the width as needed */
+        height: auto;
+        padding: 10px;
+    }
+
+    .heading h1 {
+        font-size: 1.3em;
+    }
+
+    .heading h4 {
+        font-size: 1.3em;
+    }
+
+    .daytour-popup-container h2,
+    .nighttour-popup-container h2,
+    .overnightinclusions-container h2 {
+        font-size: 1.1em; /* Adjust the font size as needed */
+    }
+
+    .booknow {
+        margin: 15px auto 10px; /* Center horizontally, add margin-top and margin-bottom */
+        display: block;
+        padding: 10px;
+        text-align: center; /* Align the text in the center */
+    }
+}
+
+/* 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .daytour,
+    .nighttour,
+    .overnight {
+        width: 48%;
+        height: auto;
+    }
+
+    .daytour-popup-container,
+    .nighttour-popup-container,
+    .overnightinclusions-container {
+        width: 60%; /* Adjust the width as needed */
+        height: auto;
+        padding: 10px;
+    }
+
+    .daytour-popup-container h2,
+    .nighttour-popup-container h2,
+    .overnightinclusions-container h2 {
+        font-size: 1.2em; /* Adjust the font size as needed */
+    }
+}
+
+/* 1280px */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .daytour,
+    .nighttour,
+    .overnight {
+        width: 48%;
+        height: auto;
+    }
+
+    .daytour-popup-container h2,
+    .nighttour-popup-container h2,
+    .overnightinclusions-container h2 {
+        font-size: 1.3em; /* Adjust the font size as needed */
+    }
+}
+
+/* 1281px and larger */
+@media only screen and (min-width: 1281px) {
+    .daytour,
+    .nighttour,
+    .overnight {
+        width: 48%;
+        height: auto;
+    }
+
+}

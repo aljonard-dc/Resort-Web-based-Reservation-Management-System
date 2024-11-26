@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #A9A9A9; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+
+.aboutus-sec{
+    color:#226027;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff00;
+
+}
+
+.aboutus-sec .aboutus-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+   /* border: 3px solid red; */
+}
+
+.aboutus-container .space{
+    width: 100%;
+    height: 15vh;
+    /* border: 3px solid brown; */
+}
+
+.about-pos{
+    width: 100%;
+    height: 20vh;
+    /* border: 3px solid pink; */
+    display: grid;
+    place-items: center;
+   
+}
+
+.about-title{
+    margin-top: 20px;
+    width: 40%;
+    height: 10vh;   
+}
+
+.about-title h2{
+    text-transform: uppercase;
+    display: grid;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.3em;
+}
+
+.hr-one {
+    margin: 20px auto;
+     width: 340px;
+     border: 0;
+     height: 2px;
+     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(121, 121, 121, 0.96), rgba(255, 255, 255, 0));
+ }
+ 
+ .h50 {
+     clear: both;
+     height: 50px;
+ }
+ 
+.aboutus-container .col-1{
+   
+    width: 45%;
+    height: 80%;
+    display: grid;
+    place-items: center;
+}
+
+.img-pos{
+    width: 88%;
+    height: 84%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+    overflow: hidden;
+
+    &:hover {
+		transform: scale(1.05);
+	}
+
+	&--inverted:hover {
+		transform: scale(0.96);
+	}
+   
+}
+
+.img-pos .pic{
+    width: 110%;
+    max-height: 90%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.aboutus-container .col-2{
+ 
+    width: 55%;
+    height: 80%;
+    display: grid;
+    place-items: center;
+    
+}
+.aboutus-pos{
+    width: 80%;
+
+
+}
+.aboutus-pos p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+@media screen and (max-width:1200px){
+    .aboutus-sec{
+        width: 100%;
+        height: auto;
+        
+    }
+    .aboutus-container{
+        width: 100%;
+        height: auto;
+    
+    }
+    .hr-one {
+         margin: 20px auto;
+         width: 160px;
+         border: 0;
+         height: 2px;
+         background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(121, 121, 121, 0.96), rgba(255, 255, 255, 0));
+     }
+   
+    .about-title h2{
+        text-transform: uppercase;
+        display: grid;
+        place-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.8em;
+    }
+    .aboutus-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+  
+    }
+    .about-pos{
+        width: 100%;
+       
+    }
+    .aboutus-container .col-1{
+        width: 100%;
+        
+    }
+    .aboutus-container .col-2{
+        width: 100%;
+    
+    }
+    .aboutus-pos{
+        width: 100%;
+        padding-bottom: 3em;
+    }
+    .aboutus-pos p{
+       font-size: 1.5rem;
+       
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .aboutus-sec{
+        width: 100%;
+        height: auto;
+        
+    }
+    .aboutus-container{
+        width: 100%;
+        height: auto;
+    
+    }
+    .hr-one {
+         margin: 20px auto;
+         width: 160px;
+         border: 0;
+         height: 2px;
+         background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(121, 121, 121, 0.96), rgba(255, 255, 255, 0));
+     }
+   
+    .about-title h2{
+        text-transform: uppercase;
+        display: grid;
+        place-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.8rem;
+    }
+    .aboutus-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+  
+    }
+    .about-pos{
+        width: 100%;
+       
+    }
+    .aboutus-container .col-1{
+        width: 100%;
+        
+    }
+    .aboutus-container .col-2{
+        width: 100%;
+    
+    }
+    .aboutus-pos{
+        width: 100%;
+        padding-bottom: 3em;
+    }
+    .aboutus-pos p{
+       font-size: 1.1rem;
+       
+    }
+}
