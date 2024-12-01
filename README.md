@@ -24,7 +24,7 @@ The project is organized into the following directories:
 ![Responsive Design](responsive.png)
 
 - **GCash and PayPal Payment**: The reservation management system integrates online payment options, offering users the convenience of choosing between GCash and PayPal. Users can opt to make a half-payment as a down payment or pay the full price for their reservation. This feature streamlines the booking process by providing flexible and secure payment choices. By catering to diverse preferences, this payment integration enhances the accessibility and user-friendliness of the reservation system, ensuring a seamless and accommodating transaction experience.
-![GCash and PayPal Payment](gcash paypal payment.png)
+![GCash and PayPal Payment](gcashpaypalpayment.png)
 
 - **Automated Emails**: The system includes an automated email feature to enhance communication and efficiency. Users will receive email notifications sent to the address they provide for various actions, such as reservation confirmations, cancellations, and account verification during registration. This ensures prompt and reliable communication at every stage of their interaction.
 ![Automated Emails](automatedemails.png)
