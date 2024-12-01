@@ -36,6 +36,6 @@ The project is organized into the following directories:
   ![QR Code](qrcode.png)
 
 ## Developers
-[Aljonard B. Dela Cruz ](https://www.linkedin.com/in/aljonard-dela-cruz-69b052317/)
-[Johnrey V. Luntayao ](https://www.linkedin.com/in/johnrey-luntayao/)
-[Jenica J. Cabanela](https://www.linkedin.com/in/jenica-j-cabanela-92b5b72ab/)
+- [Aljonard B. Dela Cruz ](https://www.linkedin.com/in/aljonard-dela-cruz-69b052317/)
+- [Johnrey V. Luntayao ](https://www.linkedin.com/in/johnrey-luntayao/)
+- [Jenica J. Cabanela](https://www.linkedin.com/in/jenica-j-cabanela-92b5b72ab/)
