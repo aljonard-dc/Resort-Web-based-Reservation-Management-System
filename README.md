@@ -35,4 +35,7 @@ The project is organized into the following directories:
 - **QR Code**: Upon completing a reservation, the system generates a unique QR code for download. This QR code serves as proof of booking and is required during check-in. It includes essential details such as the client’s information, tour package, number of guests, check-in and check-out times, room details, and total rate, which can be quickly accessed when scanned.
   ![QR Code](qrcode.png)
 
-
+## Developers
+[Aljonard B. Dela Cruz ](https://www.linkedin.com/in/aljonard-dela-cruz-69b052317/)
+[Johnrey V. Luntayao ](https://www.linkedin.com/in/johnrey-luntayao/)
+[Jenica J. Cabanela](https://www.linkedin.com/in/jenica-j-cabanela-92b5b72ab/)
